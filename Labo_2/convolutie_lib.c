@@ -5,21 +5,23 @@ void convolution_1D(double * xn, double *hn, double *y, int xlen, int hlen)
 	for (int i = 0; i < xlen + hlen - 1; i++)
 	{
 		int kmin, kmax, k;
-		if (i >= hlen - 1) 
-		{
-			kmin = i - (hlen - 1);
-		}
-		else
+		if (i < hlen - 1) 
 		{
 			kmin = 0;
 		}
-		if (i < xlen - 1)
+		else
 		{
-			kmax = i;
+			kmin = i - (hlen - 1);
+			
+		}
+		if (i >= xlen - 1)
+		{
+			kmax = xlen - 1;
 		}
 		else
 		{
-			kmax = xlen - 1;
+			
+			kmax = i;
 		}
 
 		for (k = kmin; k <= kmax; k++)
