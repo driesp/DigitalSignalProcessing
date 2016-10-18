@@ -4,8 +4,8 @@
 
 int main(int argc, char **argv[])
 {
-	double x[] = { 1 ,2 ,3};
-	double h[] = { 1 ,2};
+	double x[] = { 1 ,2 ,3, 4};
+	double h[] = { 1 ,2 ,3};
 	double *y;
 	y = (double *)calloc(size(x) + size(h) - 1, sizeof(double));
 
