@@ -1,0 +1,22 @@
+
+aanmaken van functie windowing(...)
+(xn) ---> |wn| ---> (x'n) ---> |DFT|
+
+-> default RH window
+-> driehoekig window
+-> hamming window
+-> hanning window
+
+wn -> zie cursus
+
+aanmaken van functie zeropadding(...)
+1 -> check N
+2 -> Zoek Net hogere macht van 2
+3 -> xn aanvullen met 0n tot dat aantal
+
+
+uiteindelijk:
+-> gewonde dft
+-> DFT van windowed sequentie
+-> DFT van zeropadded windowed sequentie
+-> DFT van windowed zeropadded sequentie
